@@ -1,11 +1,15 @@
+//Change these to match your style and class
+var orgFontSize = 20;
+var elName = "changeme";
+
 function isOverflown(element) {
   return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
 }
 function resize() {  
-  let els = document.getElementsByClassName('btn');//change me
+  let els = document.getElementsByClassName(elName);
   console.log(els);
   for (let j = 0; j < els.length;j++){
-    els[j].style.fontSize=20;
+    els[j].style.fontSize=orgFontSize;
   }
   for (let j = 0; j < els.length;j++){
     //let fontSizez =(els[j].style.fontSize);
